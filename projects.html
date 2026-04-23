@@ -326,8 +326,7 @@ A camera calibration GUI developed at ROAM-Lab, supporting multiple calibration 
         </div>
       </div>
       <p class="project-desc">
-        A standalone image perspective correction tool, available in two versions. The user interactively selects four corner points on any planar surface within an image. The application then computes the homography transform between the selected quadrilateral and its rectified target plane, producing a flat, bird's-eye-view output. This makes it useful for document scanning, whiteboard capture, and image-based measurement tasks.
-      </p>
+A standalone perspective rectification tool available in two versions, built around the principle of mapping pixels from a three-dimensional scene onto a planar surface through homographic projection — interpolating pixel values during the warp to reconstruct the rectified image. The user interactively selects four corner points on any planar surface within the image; the application then estimates the homography between the source quadrilateral and the target plane, and resamples the image by transferring each pixel to its corrected position via interpolation. The second version extends this with scroll-based zoom on the input image, allowing precise corner placement on fine details before the transform is applied. Useful for document scanning, whiteboard capture, and image-based measurement.      </p>
       <div class="project-tags">
         <span class="tag accent">Computer Vision</span>
         <span class="tag">Homography</span>
